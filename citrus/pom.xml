@@ -20,7 +20,8 @@
         <maven-surefire-plugin.version>3.0.0</maven-surefire-plugin.version>
 
         <!-- Dependencies -->
-        <citrus.version>3.4.0</citrus.version>
+        <citrus.version>4.0.2</citrus.version>
+        <citrus.remote.version>3.5.0-SNAPSHOT</citrus.remote.version>
         <spring.version>5.3.27</spring.version>
         <log4j2.version>2.20.0</log4j2.version>
 
@@ -44,7 +45,7 @@
                 <plugin>
                     <groupId>com.consol.citrus</groupId>
                     <artifactId>citrus-remote-maven-plugin</artifactId>
-                    <version>${citrus.version}</version>
+                    <version>${citrus.remote.version}</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -170,7 +171,7 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.consol.citrus</groupId>
+                <groupId>org.citrusframework</groupId>
                 <artifactId>citrus-bom</artifactId>
                 <version>${citrus.version}</version>
                 <type>pom</type>
@@ -179,7 +180,7 @@
             <dependency>
                 <groupId>com.consol.citrus</groupId>
                 <artifactId>citrus-remote-server</artifactId>
-                <version>${citrus.version}</version>
+                <version>${citrus.remote.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -200,31 +201,31 @@
 
         <!-- Citrus -->
         <dependency>
-            <groupId>com.consol.citrus</groupId>
+            <groupId>org.citrusframework</groupId>
             <artifactId>citrus-base</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.consol.citrus</groupId>
+            <groupId>org.citrusframework</groupId>
             <artifactId>citrus-spring</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.consol.citrus</groupId>
+            <groupId>org.citrusframework</groupId>
             <artifactId>citrus-endpoint-catalog</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.consol.citrus</groupId>
+            <groupId>org.citrusframework</groupId>
             <artifactId>citrus-testng</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.consol.citrus</groupId>
+            <groupId>org.citrusframework</groupId>
             <artifactId>citrus-http</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.consol.citrus</groupId>
+            <groupId>org.citrusframework</groupId>
             <artifactId>citrus-validation-json</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.consol.citrus</groupId>
+            <groupId>org.citrusframework</groupId>
             <artifactId>citrus-validation-text</artifactId>
         </dependency>
         <dependency>
