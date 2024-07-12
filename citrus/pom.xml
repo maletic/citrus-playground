@@ -20,9 +20,9 @@
         <maven-surefire-plugin.version>3.0.0</maven-surefire-plugin.version>
 
         <!-- Dependencies -->
-        <citrus.version>4.0.2</citrus.version>
-        <citrus.remote.version>3.5.0-SNAPSHOT</citrus.remote.version>
-        <spring.version>5.3.27</spring.version>
+        <citrus.version>4.3.0-SNAPSHOT</citrus.version>
+        <citrus.remote.version>4.3.0-SNAPSHOT</citrus.remote.version>
+        <spring.version>6.1.8</spring.version>
         <log4j2.version>2.20.0</log4j2.version>
 
         <!-- Project settings -->
@@ -43,7 +43,7 @@
                     <version>${maven-compiler-plugin.version}</version>
                 </plugin>
                 <plugin>
-                    <groupId>com.consol.citrus</groupId>
+                    <groupId>org.citrusframework</groupId>
                     <artifactId>citrus-remote-maven-plugin</artifactId>
                     <version>${citrus.remote.version}</version>
                 </plugin>
@@ -101,7 +101,7 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>com.consol.citrus</groupId>
+                <groupId>org.citrusframework</groupId>
                 <artifactId>citrus-remote-maven-plugin</artifactId>
                 <executions>
                     <execution>
@@ -178,7 +178,7 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>com.consol.citrus</groupId>
+                <groupId>org.citrusframework</groupId>
                 <artifactId>citrus-remote-server</artifactId>
                 <version>${citrus.remote.version}</version>
             </dependency>
@@ -229,7 +229,7 @@
             <artifactId>citrus-validation-text</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.consol.citrus</groupId>
+            <groupId>org.citrusframework</groupId>
             <artifactId>citrus-remote-server</artifactId>
         </dependency>
     </dependencies>
@@ -280,7 +280,7 @@
                         </executions>
                     </plugin>
                     <plugin>
-                        <groupId>com.consol.citrus</groupId>
+                        <groupId>org.citrusframework</groupId>
                         <artifactId>citrus-remote-maven-plugin</artifactId>
                         <executions>
                             <execution>
